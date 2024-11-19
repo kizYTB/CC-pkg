@@ -12,7 +12,7 @@
       "version": "1.0.1",
       "url": "-",
       "description": "Une dépendance pour example-software.",
-      "install_command": "shell.run('wget','run','https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua')",
+      "install_command": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua",
       "uninstall_command": "rm /.bootloader /startup.lua"
     }
   }
