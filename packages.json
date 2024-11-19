@@ -7,7 +7,7 @@
         },
         "Bootloader-for-CC-Tweaked": {
             "description": "A bootloader for your OS on CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/base-lib/install.lua"
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua"
         }
     }
 }
