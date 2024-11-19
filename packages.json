@@ -1,0 +1,13 @@
+{
+    "packages": {
+        "NewOS": {
+            "description": "A OS on CC-Tweaked",
+            "dependencies": ["Bootloader-for-CC-Tweaked"],
+            "install": "wget run https://kiz-data.jtheberg.fr/CCMC/OS/install/install.lua"
+        },
+        "Bootloader-for-CC-Tweaked": {
+            "description": "A bootloader for your OS on CC-Tweaked",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/base-lib/install.lua"
+        }
+    }
+}
