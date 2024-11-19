@@ -1,19 +1,10 @@
 {
-  "softwares": {
-    "NewOS": {
-      "version": "1.0.2",
-      "url": "-",
-      "description": "A OS on CC-Tweaked",
-      "install_command": "wget run https://kiz-data.jtheberg.fr/CCMC/OS/install/install.lua",
-      "uninstall_command": "rm /.NewOS /.bootloader/OS/NewOS.json",
-      "dependencies": ["Bootloader-for-CC-Tweaked"]
-    },
-    "Bootloader-for-CC-Tweaked": {
-      "version": "1.0.1",
-      "url": "-",
-      "description": "Une dépendance pour example-software.",
-      "install_command": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua",
-      "uninstall_command": "rm /.bootloader /startup.lua"
+    "name": "NewOS",
+    "version": "1.0.2",
+    "description": "Un OS pour CC tweaked",
+    "dependencies": [],
+    "install": {
+        "type": "wget",
+        "code": "https://kiz-data.jtheberg.fr/CCMC/OS/install/install.lua"
     }
-  }
 }
