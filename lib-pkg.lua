@@ -1,5 +1,5 @@
 -- URL du dépôt GitHub contenant le fichier JSON des paquets
-local REPO_URL = "https://raw.githubusercontent.com/kizYTB/CC-pkg/main/packages.json"
+local REPO_URL = "https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/packages.json"
 
 -- Fonction pour télécharger et lire le fichier JSON des paquets
 local function fetchPackageList()
