@@ -1,17 +1,17 @@
 {
     "packages": {
         "NewOS": {
-            "description": "A OS on CC-Tweaked",
+            "description": "An operating system for CC-Tweaked",
             "dependencies": ["Bootloader-for-CC-Tweaked"],
             "install": "wget run https://kiz-data.jtheberg.fr/CCMC/OS/install/install.lua"
         },
         "Bootloader-for-CC-Tweaked": {
-            "description": "A bootloader for your OS on CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/pkg/pkg.lua"
+            "description": "A bootloader for your operating system on CC-Tweaked",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/main/pkg/pkg.lua"
         },
         "Battleship": {
-            "description": "A bootloader for your OS on CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/battleship/install.lua"
+            "description": "A Battleship game for CC-Tweaked",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/battleship/install.lua"
         }
     }
 }
