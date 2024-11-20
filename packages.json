@@ -16,6 +16,15 @@
         "Doom": {
             "description": "Doom ported on CC-Tweaked",
             "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/Doom/install.lua"
+        },
+        "ecc": {
+            "description": "Elliptic Curve Cryptography in Computercraft",
+            "install": "https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/ecc/install.lua"
+        },
+        "vericode": {
+            "description": "Easy code signing for ComputerCraft By JackMacWindows",
+            "dependencies": ["ecc"],
+            "install": "https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/vericode/install.lua"
         }
     }
 }
