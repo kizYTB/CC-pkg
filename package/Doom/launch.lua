@@ -1,1 +1,0 @@
-shell.run("pastebin" ,"run" ,"xLC8mABU")
