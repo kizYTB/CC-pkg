@@ -12,6 +12,10 @@
         "Battleship": {
             "description": "A Battleship game for CC-Tweaked",
             "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/battleship/install.lua"
+        },
+        "Doom": {
+            "description": "Doom ported on CC-Tweaked",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/Doom/install.lua"
         }
     }
 }
