@@ -21,10 +21,9 @@
             "description": "Elliptic Curve Cryptography in Computercraft",
             "install": "https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/ecc/install.lua"
         },
-        "vericode": {
-            "description": "Easy code signing for ComputerCraft By JackMacWindows",
-            "dependencies": ["ecc"],
-            "install": "https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/vericode/install.lua"
+        "cosu": {
+            "description": "A Lua editor that provides a modern user interface for CraftOS (and anything based on it).",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/cosu/install.lua"
         }
     }
 }
