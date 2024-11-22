@@ -11,7 +11,7 @@
 To install the package manager run these commands
 ```
 cd /
-wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/lib-pkg.lua pkg.lua
+wget https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/lib-pkg.lua pkg.lua
 ```
 
 # Commands list
