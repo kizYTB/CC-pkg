@@ -26,7 +26,7 @@
             "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/cosu/install.lua"
         "LevelOS": {
             "description": "Windows 10 ported to CC tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/cosu/install.lua"
+            "install": "wget run https://install.leveloper.cc/"
         }
     }
 }
