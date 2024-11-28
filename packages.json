@@ -7,7 +7,7 @@
         },
         "Bootloader-for-CC-Tweaked": {
             "description": "A bootloader for your operating system on CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/main/pkg/pkg.lua"
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua"
         },
         "Battleship": {
             "description": "A Battleship game for CC-Tweaked",
