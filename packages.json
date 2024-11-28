@@ -5,11 +5,6 @@
             "dependencies": ["Bootloader-for-CC-Tweaked"],
             "install": "wget run https://kiz-data.jtheberg.fr/CCMC/OS/install/install.lua"
         },
-        "TelOS": {
-            "description": "NewOS official fork to pocket",
-            "dependencies": ["Bootloader-for-CC-Tweaked"],
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/NewOS/refs/heads/main/TelOS-Install.lua"
-        },
         "Bootloader-for-CC-Tweaked": {
             "description": "A bootloader for your operating system on CC-Tweaked",
             "install": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua"
@@ -33,6 +28,11 @@
         "LevelOS": {
             "description": "Windows 10 ported to CC Tweaked",
             "install": "wget run https://install.leveloper.cc/"
+        },
+        "TelOS": {
+            "description": "NewOS official fork to pocket",
+            "dependencies": ["Bootloader-for-CC-Tweaked"],
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/NewOS/refs/heads/main/TelOS-Install.lua"
         }
     }
 }
