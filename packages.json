@@ -28,6 +28,10 @@
         "LevelOS": {
             "description": "Windows 10 ported to CC tweaked",
             "install": "wget run https://install.leveloper.cc/"
+        },
+        "TelOS": {
+            "description": "NewOS on pocket",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/NewOS/refs/heads/main/TelOS-Install.lua"
         }
     }
 }
