@@ -26,3 +26,41 @@ To listen package you can install execute this command
 ```
 pkg list
 ```
+
+# All packages
+
+    <h1>Contenu du JSON</h1>
+    <div id="json-content">
+        <p>Chargement des données...</p>
+    </div>
+
+    <script>
+        // Exemple de chemin vers le fichier JSON
+        const jsonPath = 'data.json'; // Remplacez avec le chemin réel du fichier
+
+        // Fonction pour charger et afficher le JSON
+        fetch(jsonPath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur lors du chargement du fichier JSON.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const container = document.getElementById('json-content');
+                container.innerHTML = ''; // Réinitialiser le contenu
+
+                // Filtrer et afficher le JSON sans les clés "install"
+                const filteredData = Object.entries(data).filter(([key]) => key !== 'install');
+
+                // Générer un affichage lisible
+                filteredData.forEach(([key, value]) => {
+                    const item = document.createElement('div');
+                    item.innerHTML = `<strong>${key}:</strong> ${JSON.stringify(value, null, 2)}`;
+                    container.appendChild(item);
+                });
+            })
+            .catch(error => {
+                document.getElementById('json-content').textContent = `Erreur: ${error.message}`;
+            });
+    </script>
