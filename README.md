@@ -28,15 +28,34 @@ pkg list
 ```
 
 # All packages
-<div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afficher le JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
     <h1>Contenu du JSON</h1>
     <div id="json-content">
         <p>Chargement des données...</p>
     </div>
 
     <script>
-        // Exemple de chemin vers le fichier JSON
-        const jsonPath = 'data.json'; // Remplacez avec le chemin réel du fichier
+        // Lien brut vers le fichier JSON dans votre repo GitHub
+        const jsonPath = 'https://raw.githubusercontent.com/<votre-utilisateur>/<votre-repo>/main/data.json';
 
         // Fonction pour charger et afficher le JSON
         fetch(jsonPath)
@@ -64,4 +83,5 @@ pkg list
                 document.getElementById('json-content').textContent = `Erreur: ${error.message}`;
             });
     </script>
-</div>
+</body>
+</html>
