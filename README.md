@@ -28,7 +28,7 @@ pkg list
 ```
 
 # All packages
-
+<div>
     <h1>Contenu du JSON</h1>
     <div id="json-content">
         <p>Chargement des données...</p>
@@ -64,3 +64,4 @@ pkg list
                 document.getElementById('json-content').textContent = `Erreur: ${error.message}`;
             });
     </script>
+</div>
