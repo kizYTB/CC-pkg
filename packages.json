@@ -38,5 +38,9 @@
             "description": "Advenced music system for CC Tweaked",
             "install": "wget run https://raw.githubusercontent.com/kizYTB/Music-program-with-server-for-cc-tweaked/refs/heads/main/install.lua"
         }
+        "Sec_System_CC": {
+            "description": "Sec_System_CC",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/Sec-system-cc/refs/heads/main/install.lua"
+        }
     }
 }
