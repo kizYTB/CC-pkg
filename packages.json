@@ -3,40 +3,44 @@
         "NewOS": {
             "description": "An operating system for CC-Tweaked",
             "dependencies": ["Bootloader-for-CC-Tweaked"],
-            "install": "wget run https://kiz-data.jtheberg.fr/CCMC/OS/install/install.lua"
+            "install": "wget https://kiz-data.jtheberg.fr/CCMC/OS/install/install.lua -O install.lua && shell.run('install.lua')"
         },
         "Bootloader-for-CC-Tweaked": {
             "description": "A bootloader for your operating system on CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua"
+            "install": "wget https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua -O install.lua && shell.run('install.lua')"
         },
         "Battleship": {
             "description": "A Battleship game for CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/battleship/install.lua"
+            "install": "wget https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/battleship/install.lua -O install.lua && shell.run('install.lua')"
         },
         "Doom": {
             "description": "Doom ported on CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/Doom/install.lua"
+            "install": "wget https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/Doom/install.lua -O install.lua && shell.run('install.lua')"
         },
         "ecc": {
             "description": "Elliptic Curve Cryptography in Computercraft",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/ecc/install.lua"
+            "install": "wget https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/ecc/install.lua -O install.lua && shell.run('install.lua')"
         },
         "cosu": {
             "description": "A Lua editor that provides a modern user interface for CraftOS (and anything based on it).",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/cosu/install.lua"
+            "install": "wget https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/cosu/install.lua -O install.lua && shell.run('install.lua')"
         },
         "LevelOS": {
             "description": "Windows 10 ported to CC Tweaked",
-            "install": "wget run https://install.leveloper.cc/"
+            "install": "wget https://install.leveloper.cc/ -O install.lua && shell.run('install.lua')"
         },
         "TelOS": {
             "description": "NewOS official fork to pocket",
             "dependencies": ["Bootloader-for-CC-Tweaked"],
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/NewOS/refs/heads/main/TelOS-Install.lua"
+            "install": "wget https://raw.githubusercontent.com/kizYTB/NewOS/refs/heads/main/TelOS-Install.lua -O install.lua && shell.run('install.lua')"
         },
         "Advenced_music": {
             "description": "Advenced music system for CC Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/Music-program-with-server-for-cc-tweaked/refs/heads/main/install.lua"
+            "install": "wget https://raw.githubusercontent.com/kizYTB/Music-program-with-server-for-cc-tweaked/refs/heads/main/install.lua -O install.lua && shell.run('install.lua')"
+        },
+        "Sec_System_CC": {
+            "description": "Sec_System_CC",
+            "install": "wget https://raw.githubusercontent.com/kizYTB/Sec-system-cc/refs/heads/main/install.lua -O install.lua && shell.run('install.lua')"
         }
     }
 }
