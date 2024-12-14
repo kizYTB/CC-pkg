@@ -40,7 +40,7 @@
         },
         "Sec_System_CC": {
             "description": "Sec_System_CC",
-            "install": "wget https://raw.githubusercontent.com/kizYTB/Sec-system-cc/refs/heads/main/install.lua')"
+            "install": "wget https://raw.githubusercontent.com/kizYTB/Sec-system-cc/refs/heads/main/install.lua"
         }
     }
 }
