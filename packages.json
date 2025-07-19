@@ -1,46 +1,197 @@
 {
     "packages": {
+        "advos": {
+            "name": "AdvOS",
+            "version": "1.0.0",
+            "description": "Système d'exploitation avancé pour CC-Tweaked avec VFS et gestionnaire de paquets",
+            "author": "kizYTB",
+            "category": "system",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/packages/advos/install.lua",
+            "preserveData": ["/.AdvOS/vfs.dat", "/.AdvOS/config.adv"],
+            "requires": {
+                "os": "ComputerCraft",
+                "ccversion": "1.100.0"
+            }
+        },
         "NewOS": {
+            "name": "NewOS",
+            "version": "2.1.0",
             "description": "An operating system for CC-Tweaked",
+            "author": "kizYTB",
+            "category": "system",
             "dependencies": ["Bootloader-for-CC-Tweaked"],
-            "install": "wget run https://kiz-data.jtheberg.fr/CCMC/OS/install/install.lua"
+            "install": "wget run https://kiz-data.jtheberg.fr/CCMC/OS/install/install.lua",
+            "compatibility": {
+                "minVersion": "1.0.0",
+                "conflicts": ["LevelOS", "TelOS"],
+                "requires": {
+                    "memory": "32k",
+                    "ccversion": "1.95.0"
+                }
+            }
         },
         "Bootloader-for-CC-Tweaked": {
+            "name": "CC-Bootloader",
+            "version": "1.2.0",
             "description": "A bootloader for your operating system on CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua"
+            "author": "kizYTB",
+            "category": "system",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/Bootloader-for-CC-Tweaked/refs/heads/main/install.lua",
+            "compatibility": {
+                "requires": {
+                    "ccversion": "1.95.0"
+                }
+            }
         },
         "Battleship": {
+            "name": "Battleship",
+            "version": "1.0.0",
             "description": "A Battleship game for CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/battleship/install.lua"
+            "author": "kizYTB",
+            "category": "games",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/battleship/install.lua",
+            "screenshots": [
+                "https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/battleship/screenshots/1.png"
+            ],
+            "compatibility": {
+                "requires": {
+                    "term": "color"
+                }
+            }
         },
         "Doom": {
+            "name": "CC-Doom",
+            "version": "1.1.0",
             "description": "Doom ported on CC-Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/Doom/install.lua"
+            "author": "kizYTB",
+            "category": "games",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/main/package/Doom/install.lua",
+            "compatibility": {
+                "requires": {
+                    "term": "color",
+                    "memory": "128k",
+                    "graphics": "advanced"
+                }
+            }
         },
         "ecc": {
+            "name": "ECC",
+            "version": "1.0.0",
             "description": "Elliptic Curve Cryptography in Computercraft",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/ecc/install.lua"
+            "author": "kizYTB",
+            "category": "security",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/ecc/install.lua",
+            "compatibility": {
+                "requires": {
+                    "ccversion": "1.95.0"
+                }
+            }
         },
         "cosu": {
-            "description": "A Lua editor that provides a modern user interface for CraftOS (and anything based on it",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/cosu/install.lua"
+            "name": "COSU Editor",
+            "version": "2.0.0",
+            "description": "A modern Lua editor with advanced UI for CraftOS",
+            "author": "kizYTB",
+            "category": "development",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/CC-pkg/refs/heads/main/package/cosu/install.lua",
+            "compatibility": {
+                "requires": {
+                    "term": "color",
+                    "ccversion": "1.95.0"
+                }
+            },
+            "preserveData": ["/cosu/config.json", "/cosu/themes/"]
         },
         "LevelOS": {
-            "description": "Windows 10 ported to CC Tweaked",
-            "install": "wget run https://install.leveloper.cc/"
+            "name": "LevelOS",
+            "version": "3.0.0",
+            "description": "Windows 10 inspired OS for CC Tweaked",
+            "author": "Leveloper",
+            "category": "system",
+            "install": "wget run https://install.leveloper.cc/",
+            "compatibility": {
+                "minVersion": "1.0.0",
+                "conflicts": ["NewOS", "TelOS"],
+                "requires": {
+                    "term": "color",
+                    "memory": "64k",
+                    "graphics": "advanced"
+                }
+            }
         },
         "TelOS": {
-            "description": "NewOS official fork to pocket",
+            "name": "TelOS",
+            "version": "1.5.0",
+            "description": "NewOS official fork optimized for pocket computers",
+            "author": "kizYTB",
+            "category": "system",
             "dependencies": ["Bootloader-for-CC-Tweaked"],
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/NewOS/refs/heads/main/TelOS-Install.lua"
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/NewOS/refs/heads/main/TelOS-Install.lua",
+            "compatibility": {
+                "minVersion": "1.0.0",
+                "conflicts": ["NewOS", "LevelOS"],
+                "requires": {
+                    "computer": "pocket",
+                    "ccversion": "1.95.0"
+                }
+            }
         },
         "Advenced_music": {
-            "description": "Advenced music system for CC Tweaked",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/Music-program-with-server-for-cc-tweaked/refs/heads/main/install.lua"
+            "name": "Advanced Music",
+            "version": "2.0.0",
+            "description": "Advanced music system with server support for CC Tweaked",
+            "author": "kizYTB",
+            "category": "multimedia",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/Music-program-with-server-for-cc-tweaked/refs/heads/main/install.lua",
+            "compatibility": {
+                "requires": {
+                    "speaker": true,
+                    "network": true
+                }
+            },
+            "preserveData": ["/music/playlists/", "/music/settings.json"],
+            "services": {
+                "server": {
+                    "port": 8080,
+                    "protocol": "http"
+                }
+            }
         },
         "Sec_System_CC": {
-            "description": "Sec_System_CC",
-            "install": "wget run https://raw.githubusercontent.com/kizYTB/Sec-system-cc/refs/heads/main/install.lua"
+            "name": "Security System",
+            "version": "1.0.0",
+            "description": "Advanced security and monitoring system for CC Tweaked",
+            "author": "kizYTB",
+            "category": "security",
+            "install": "wget run https://raw.githubusercontent.com/kizYTB/Sec-system-cc/refs/heads/main/install.lua",
+            "compatibility": {
+                "requires": {
+                    "term": "color",
+                    "network": true,
+                    "peripheral": ["monitor"]
+                }
+            },
+            "preserveData": ["/security/config/", "/security/logs/"],
+            "services": {
+                "monitor": {
+                    "autostart": true,
+                    "background": true
+                }
+            }
         }
+    },
+    "categories": {
+        "system": "Operating Systems and System Tools",
+        "games": "Games and Entertainment",
+        "development": "Development Tools",
+        "security": "Security and Protection",
+        "multimedia": "Audio and Media"
+    },
+    "metadata": {
+        "repositoryVersion": "2.0.0",
+        "lastUpdated": "2024-01-20",
+        "maintainer": "kizYTB",
+        "website": "https://github.com/kizYTB/CC-pkg",
+        "minimumCCVersion": "1.95.0"
     }
 }
